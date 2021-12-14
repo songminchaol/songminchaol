@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive coffee shop website design</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./css/b_pascucci_news.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="/index.asp">
+        <img src="/lib/images/common/h1_logo.png" alt="CAFFE PASCUCCI"></a>
+
+    <nav class="navbar">
+   
+        <a href="index.html">ESSPRESSO BAR</a>
+        <a href="CAFFE PASCUCCI.html">CAFFE PASCUCCI</a>
+        <a href="menu.html">MENU</a>
+        <a href="#review">NEWS</a>
+        <a href="#contact">STORE</a>
+        <a href="#blogs">CUSTOMER</a>
+        <a href="#blogs">가맹사업안내</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="검색어를 입력하세요">
+        <label for="search-box" class="fas fa-search"></label>
+    </div>
+
+    <div class="cart-items-container">
+       
+        <div class="cart-item">
+            
+            <div class="content">
+                <h3>ESSPRESSO BAR</h3>
+                <div class="search-form active">
+                    <input type="search" id="search-box" placeholder="검색어를 입력하세요">
+                    <label for="search-box" class="fas fa-search"></label>
+                </div>
+            </div>
+        </div>
+        <div class="cart-item">
+
+            <span class="fas fa-times"></span>
+            
+            <div class="content">
+                <h3>CAFFE PASCUCCI</h3>
+                 <!-- 자바스크립트 모달창 개념으로구현 -->
+                <ul class="pp">
+                    <li><a href="#">브랜드소개</a></li>
+                    <li><a href="#">전통과 전통의 만남</a></li>
+                    <li><a href="#">한국파스꾸찌</a></li>
+                    <li><a href="#">이탈리아파스꾸찌</a></li>
+                </ul>>
+                 <!-- 자바스크립트 모달창 개념으로구현 -->
+            </div>
+        </div>
+
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <div class="content">
+                <h3><a href="#"></a>menu</h3>
+                <!-- 디스플레이논 -->
+                <ul class="pp">
+                        <li>
+                            <a href="#">Italian coffee</a>
+                            
+                            <!-- 자바스크립트 모달창 개념으로구현 -->
+                            <ul class=display>
+                            
+                                <li><a href="#">Italian coffee</a></li>
+                            
+                                <li><a href="#">Coffee Variation(Hot)</a></li>
+                            
+                                <li><a href="#">Coffee Variation(Iced)</a></li>
+                            
+                                <li><a href="#">Cold Brew</a></li>
+
+                            <!-- ㅁㅇㅁㅇㅈㅁㅂㅇ -->
+                        </li>
+                    </ul>
+            </div>
+
+<!--  
+            <li><a href="#">beverage</a>
+                <li>
+                <a href="#">Seasonal</a>
+                
+                <ul class=display>
+                
+                    <li><a href="#">Seasonal</a></li>
+                
+                    <li><a href="#">Italian Granita</a></li>
+                
+                    <li><a href="#">Tea</a></li>
+                
+                    <li><a href="#">Fresh Juice</a></li>
+                
+                    <li><a href="#">Others</a></li>
+                
+                </ul>
+                
+            </li>
+            </li>
+            <li><a href="#">food</a>
+                <li>
+                    <a href="#">Cake</a>
+                    
+                    <ul class=display>
+                    
+                        <li><a href="#">Cake</a></li>
+                    
+                        <li><a href="#">Italian Deli</a></li>
+                    
+                        <li><a href="#">Bakery</a></li>
+                    
+                        <li><a href="#">Dessert</a></li>
+                    
+                        <li><a href="#">Italian Gelato</a></li>
+                    
+                    </ul>
+                   
+                </li></li>
+
+            <li><a href="#">md</a>
+                <li>
+                    <a href="#">Bean</a>
+                   
+                    <ul class=display>
+                    
+                        <li><a href="#">Bean</a></li>
+                    
+                        <li><a href="#">Tumbler</a></li>
+                    
+                        <li><a href="#">Mug</a></li>
+                    
+                        <li><a href="#">Coffee Tool</a></li>
+                    
+                        <li><a href="#">Tea</a></li>
+                    
+                        <li><a href="#">Others</a></li>
+                    
+                    </ul>
+                 
+                </li></li>
+            -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="images/cart-item-4.png" alt="">
+            <div class="content">
+                <h3>cart item 04</h3>
+                <div class="price">$15.99/-</div>
+            </div>
+        </div>
+        <a href="#" class="btn">checkout now</a>
+    </div>
+
+</header>
+<!-- header section ends -->
+<div class="contents">
+    <!-- 검색 -->
+    <div class="schWr">
+        <form name="searchFrm" id="searchFrm" method="post">
+        <div class="search schNotice">
+            <dl>
+                <dt>검색</dt>
+                <dd>
+                    <div class="selectric-wrapper selectric-select"><div class="selectric-hide-select"><select name="searchKey" id="searchKey" class="select" tabindex="0">
+                        <option value="ALL">전체</option>
+                        <option value="TITLE">제목</option>
+                        <option value="CONTENTS">내용</option>
+                    </select></div><div class="selectric"><p class="label">전체</p><b class="button">▾</b></div><div class="selectric-items" tabindex="-1"><div class="selectric-scroll"><ul><li data-index="0" class="selected">전체</li><li data-index="1" class="">제목</li><li data-index="2" class="last">내용</li></ul></div></div><input class="selectric-input" tabindex="0"></div>
+                    <input type="text" class="textbox" id="searchValue" name="searchValue" value="" placeholder="제목 또는 내용을 입력하세요.">
+                    <a href="javascript:Search();" class="btn btnDefault">검색</a>
+                </dd>
+            </dl>
+        </div>
+        </form>
+    </div>
+    <!-- //검색 -->
+    <!-- list -->
+    
+    <div class="schResultWr">
+        <p class="schResult">총 18개의 검색 결과가 있습니다.</p>
+        <table class="table bdList">
+            <caption>공지사항 목록 테이블로 번호,제목,날짜,조회수 등의 정보를 제공합니다.</caption>
+            <colgroup>
+                <col style="width: 6.35%;">
+            
+                <col style="width: 12.7%;">
+                <col style="width: 11.11%;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">번호</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">날짜</th>
+                    <th scope="col">조회수</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr class="notice">
+                    <td>공지</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=89&amp;">X-MAS 홀케이크 판매점 안내</a>
+                    </td>
+                    <td data-title="날짜">2021.12.01</td>
+                    <td data-title="조회수">1,445</td>
+                </tr>
+            
+                <tr class="notice">
+                    <td>공지</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=87&amp;">딸기 밀크 보틀 판매점 안내</a>
+                    </td>
+                    <td data-title="날짜">2021.04.12</td>
+                    <td data-title="조회수">7,473</td>
+                </tr>
+            
+                <tr class="notice">
+                    <td>공지</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=86&amp;">파스쿠찌 음료별 카페인 함량 안내</a>
+                    </td>
+                    <td data-title="날짜">2021.02.16</td>
+                    <td data-title="조회수">3,644</td>
+                </tr>
+            
+                <tr class="notice">
+                    <td>공지</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=85&amp;">해피포인트 멤버십 정책 개편 안내</a>
+                    </td>
+                    <td data-title="날짜">2021.01.14</td>
+                    <td data-title="조회수">2,894</td>
+                </tr>
+            
+                <tr class="notice">
+                    <td>공지</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=83&amp;">해피포인트 사용 기준 변경 안내</a>
+                    </td>
+                    <td data-title="날짜">2019.11.22</td>
+                    <td data-title="조회수">5,450</td>
+                </tr>
+            
+                <tr class="notice">
+                    <td>공지</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=82&amp;">파스쿠찌 홈페이지 개인정보처리방침 변경 안내 드립니다.</a>
+                    </td>
+                    <td data-title="날짜">2019.09.16</td>
+                    <td data-title="조회수">4,106</td>
+                </tr>
+            
+                <tr class="notice">
+                    <td>공지</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=81&amp;">해피포인트 추가 적립률 변경 안내</a>
+                    </td>
+                    <td data-title="날짜">2019.08.30</td>
+                    <td data-title="조회수">4,514</td>
+                </tr>
+            
+                <tr class="notice">
+                    <td>공지</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=77&amp;">농약 PLS 제도 시행 안내</a>
+                    </td>
+                    <td data-title="날짜">2018.11.26</td>
+                    <td data-title="조회수">4,100</td>
+                </tr>
+            
+                <tr class="notice">
+                    <td>공지</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=76&amp;">PASCUCCI 사업설명회 안내</a>
+                    </td>
+                    <td data-title="날짜">2018.10.02</td>
+                    <td data-title="조회수">6,548</td>
+                </tr>
+            
+                <tr>
+                    <td>18</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=89&amp;">X-MAS 홀케이크 판매점 안내</a>
+                    </td>
+                    <td data-title="날짜">2021.12.01</td>
+                    <td data-title="조회수">1,445</td>
+                </tr>
+            
+                <tr>
+                    <td>17</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=87&amp;">딸기 밀크 보틀 판매점 안내</a>
+                    </td>
+                    <td data-title="날짜">2021.04.12</td>
+                    <td data-title="조회수">7,473</td>
+                </tr>
+            
+                <tr>
+                    <td>16</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=86&amp;">파스쿠찌 음료별 카페인 함량 안내</a>
+                    </td>
+                    <td data-title="날짜">2021.02.16</td>
+                    <td data-title="조회수">3,644</td>
+                </tr>
+            
+                <tr>
+                    <td>15</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=83&amp;">해피포인트 사용 기준 변경 안내</a>
+                    </td>
+                    <td data-title="날짜">2019.11.22</td>
+                    <td data-title="조회수">5,450</td>
+                </tr>
+            
+                <tr>
+                    <td>14</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=82&amp;">파스쿠찌 홈페이지 개인정보처리방침 변경 안내 드립니다.</a>
+                    </td>
+                    <td data-title="날짜">2019.09.16</td>
+                    <td data-title="조회수">4,106</td>
+                </tr>
+            
+                <tr>
+                    <td>13</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=81&amp;">해피포인트 추가 적립률 변경 안내</a>
+                    </td>
+                    <td data-title="날짜">2019.08.30</td>
+                    <td data-title="조회수">4,514</td>
+                </tr>
+            
+                <tr>
+                    <td>12</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=79&amp;">파스쿠찌 일부 커피 제품 가격 변경 안내</a>
+                    </td>
+                    <td data-title="날짜">2019.02.21</td>
+                    <td data-title="조회수">4,879</td>
+                </tr>
+            
+                <tr>
+                    <td>11</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=76&amp;">PASCUCCI 사업설명회 안내</a>
+                    </td>
+                    <td data-title="날짜">2018.10.02</td>
+                    <td data-title="조회수">6,548</td>
+                </tr>
+            
+                <tr>
+                    <td>10</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=75&amp;">PASCUCCI 사업설명회 안내</a>
+                    </td>
+                    <td data-title="날짜">2018.04.11</td>
+                    <td data-title="조회수">8,058</td>
+                </tr>
+            
+                <tr>
+                    <td>9</td>
+                    <td class="subject">
+                        <a href="noticeView.asp?tnSeq=74&amp;">삼성카드 보너스 포인트 사용 제휴 서비스 종료 안내</a>
+                    </td>
+                    <td data-title="날짜">2017.12.01</td>
+                    <td data-title="조회수">7,845</td>
+                </tr>
+            
+                
+            </tbody>
+        </table>
+
+        <!-- paginate -->
+        <div class="paginate">
+            <ul><li class="first1"><a href="?mMenu=searchKey=&amp;searchValue=&amp;page=1"><img src="/lib/images/common/btn_paginate_prev_first.gif" alt="맨처음"></a></li><li class="first"><a href="#"><img src="/lib/images/common/btn_paginate_first.gif" alt="처음"></a></li><li class="prev"><a href="#"><img src="/lib/images/common/btn_paginate_prev.gif" alt="이전"></a></li><li class="on"><a href="">1</a></li> <li><a href="?mMenu=searchKey=&amp;searchValue=&amp;page=2">2</a></li><li class="next"><a href="?mMenu=searchKey=&amp;searchValue=&amp;page=2"><img src="/lib/images/common/btn_paginate_next.gif" alt="다음"></a></li><li class="last"><a href="#"><img src="/lib/images/common/btn_paginate_last.gif" alt="마지막"></a></li><li class="last1"><a href="?mMenu=searchKey=&amp;searchValue=&amp;page=2"><img src="/lib/images/common/btn_paginate_next_end.gif" alt="맨마지막"></a></li></ul> 
+
+            <a href="javascript:goPage('2');" class="moreView">MORE VIEW [<span id="page">1</span>/2]</a>
+        </div>
+        <!-- //paginate -->
+    </div>
+    <!-- //list -->
+</div>
+
+
+.contents {
+    min-height: 550px;
+}
+.schWr {
+    background: #f5f5f5;
+}
+
+search {
+    width: 1260px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+.search.schNotice dt {
+    width: 60px;
+}
+.search dt {
+    float: left;
+    width: 160px;
+    padding-top: 12px;
+    font-family: "Noto Sans Bold";
+    font-size: 16px;
+}
+
+
+.search.schNotice dd {
+    width: 1200px;
+}
+.search dd {
+    float: right;
+    width: 1100px;
+}
+.search dt, .search dd {
+    height: auto;
+}
+
+
+.search dd .selectric-wrapper, .search dd .select {
+    width: 290px;
+    margin-right: 6px;
+}
+
+.selectric-wrapper {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+
+.selectric-hide-select {
+    position: relative;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+
+.search dd .selectric-wrapper, .search dd .select {
+    width: 290px;
+    margin-right: 6px;
+}
+
+.selectric-hide-select select {
+    position: absolute;
+    left: -100%;
+    display: none;
+}
+.select {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 33px 0 12px;
+    border: 1px solid #c5c5c5;
+    border-radius: 0;
+    background: #fff url(/lib/images/common/m/arr_select.png) no-repeat 100% 50%;
+    background-size: 22px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+.selectric {
+    border: 1px solid #c5c5c5;
+    position: relative;
+    background: #fff;
+}
+
+.selectric .label {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 34px 0 12px;
+    line-height: 42px;
+    height: 42px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.selectric .button {
+    background: ;
+    border-radius: 0px;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 34px;
+    height: 42px;
+    background: url(/lib/images/common/arr_select.png) no-repeat 0 0;
+    -webkit-background-size: 34px;
+    background-size: 34px;
+    color: transparent;
+    text-align: center;
+
+
+
+
+}
+
+
+
+
+
+.selectric-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #FFF;
+    border: 1px solid #C5C5C5;
+    z-index: -1;
+    box-shadow: 0 0 10px -6px;
+}
+.selectric-items .selectric-scroll {
+    height: 100%;
+    overflow: auto;
+}
+
+selectric-items ul, .selectric-items li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* font-size: 12px; */
+    line-height: 20px;
+    min-height: 20px;
+}
+
+
+.selectric-items li {
+    display: block;
+    padding: 8px;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #EEE;
+    color: #666;
+    cursor: pointer;
+}
+position: absolute !important;
+top: 0 !important;
+left: 0 !important;
+overflow: hidden !important;
+clip: rect(0, 0, 0, 0) !important;
+margin: 0 !important;
+padding: 0 !important;
+width: 1px !important;
+height: 1px !important;
+outline: none !important;
+border: none !important;
+*font: 0/0 a !important;
+background: none !important;
+}
+.search.schNotice dd .textbox {
+    width: 771px;
+}
+
+
+.search dd .textbox {
+    width: 370px;
+    margin-right: 6px;
+}
+
+.textbox {
+    height: 44px;
+    padding: 0 12px;
+    border: 1px solid #c5c5c5;
+    border-radius: 0;
+    line-height: 44px;
+}
+
+
+.btn {
+    display: inline-block;
+    width: 120px;
+    height: 44px;
+    padding-top: 13px;
+    background: #333;
+    text-align: center;
+    font-family: "Noto Sans Bold";
+    font-size: 14px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.btn, .btn:hover, .btn:focus {
+    color: #fff;
+}
+
+
+.schResultWr {
+    width: 1260px;
+    margin: 0 auto;
+    padding: 40px 0 60px;
+}
+
+.schResult {
+    margin-bottom: 18px;
+    font-size: 14px;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-top: 2px solid #929292;
+    border-bottom: 1px solid #929292;
+}
+
+
+caption {
+    display: none;
+}
+
+
+colgroup {
+    display: table-column-group;
+}
+
+width: 6.35%;
+}
+user agent stylesheet
+col {
+    display: table-column;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.table th, .table td {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    vertical-align: middle;
+}
+.table th {
+    padding: 19px 0 18px;
+    border-bottom: 1px solid #929292;
+}
+
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.table.bdList tr.notice, .table.bdList tr.new {
+    background-color: #f8f8f8;
+}
+
+user agent stylesheet
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+
+
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+
+.paginate {
+    margin-top: 40px;
+    text-align: center;
+}.paginate ul {
+    display: inline-block;
+    text-align: center;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+
+.paginate li {
+    display: inline-block;
+    margin: 0 9px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.paginate li.prev {
+    margin: 0 7px 0 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="links">
+        <a href="#">해피포인트</a>
+        <a href="#">개인정보처리방침</a>
+        <a href="#">영상정보처리기기운영관리방침</a>
+        <a href="#">이용약관</a>
+        <a href="#">윤리센고센터</a>
+        <a href="#">거래희망사전등록</a>
+        <!-- <a href="#">blogs</a> -->
+    </div>
+
+    <div class="credit">(주)파리그라상 사업자 등록번호:129-81-07244
+        경기도 성남시 중원구 사기막골로 31번길 18 FAX, 0505-073-0210 고객상담센터 080-731-2027
+        ALL RIGHTS RESERVED 2016 THE PASCUCCI,PARIS CROISSANT CO , LTD
+        <!-- <span>mr. web designer</span> | all rights reserved -->
+    </div>
+<p>(주)파리그라상 사업자 등록번호:129-81-07244
+    경기도 성남시 중원구 사기막골로 31번길 18 FAX, 0505-073-0210 고객상담센터 080-731-2027
+    ALL RIGHTS RESERVED 2016 THE PASCUCCI,PARIS CROISSANT CO , LTD
+</p>
+</section> 
+
+<!-- footer section ends -->
