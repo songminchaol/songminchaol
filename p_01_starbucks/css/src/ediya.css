@@ -1,0 +1,74 @@
+@charset "UTF-8";
+#wrap{width: 1600px;
+
+height: 1600px;}
+
+body{margin: 0;
+padding: 0;}
+
+.headbox{width: 100%;
+height:210px ;
+}
+
+.top1Areaout{width: 100%;
+height: 50px; margin: 0px;
+position: relative;z-index: 11;
+opacity: 1.0;
+border-bottom: 0px solid #ddd;
+font-weight: bold;}
+
+.top1Area{width: 1240px; position: relative;
+  top: 0px;
+  line-height: 50px; margin: 0px auto; letter-spacing: 1.0px;;
+height: 50px;}
+.t1area_c{float: right;
+position: relative;
+top:0; left: 0px;
+width: 660px;
+height: 50px;
+margin: 0px;
+padding: 0px;
+text-align:right;}
+
+.xans{float: right;
+position:absolute;
+right: 155px;}
+
+.xans>a{padding: 0px;
+color: #555;
+font-size: 12px;
+}
+
+.t1area_c a{margin: 0, 0, 0, 6px;}
+
+.icon_sns{position: absolute;
+top: 10px; right: 0;
+float: left;
+margin: 4px 15px 0 0;}
+
+.icon_sns li:nth-child(1) a {background: url(http://www.ediyastore.com/24d/top_menu_001/img/top_sns01.gif) no-repeat;}
+
+.icon_sns li a{display: block;
+width: 22px;
+height: 22px;
+}
+a{text-decoration: none;
+text-decoration-line: none;
+text-decoration-style: initial;
+text-decoration-color: initial;}
+
+a:-webkit-any-link{cursor:pointer;}
+
+.icon_sns li:nth-child(2) a{background: url( http://www.ediyastore.com/24d/top_menu_001/img/top_sns02.gif)no-repeat;} 
+.icon_sns li:nth-child(3) a{background: url( http://www.ediyastore.com/24d/top_menu_001/img/top_sns03.gif)no-repeat;} 
+.icon_sns li:nth-child(4) a{background: url(http://www.ediyastore.com/24d/top_menu_001/img/top_sns04.gif)no-repeat;} 
+
+.top2Areaout{position: relative;
+margin: 0px auto 0;
+height: 160px;
+z-index: 10;}
+
+.top2Area{position: relative;
+top: 0px;
+width: 1240px;
+margin: 0px auto;}
