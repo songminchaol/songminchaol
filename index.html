@@ -2,568 +2,260 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>complete responsive coffee shop website design</title>
+    <title>responsive personal portfolio website design tutorail</title>
 
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
     
 <!-- header section starts  -->
 
-<header class="header">
+<header>
 
-    <a href="/index.asp">
-        <img src="/lib/images/common/h1_logo.png" alt="CAFFE PASCUCCI"></a>
+    <div class="user">
+        
+        <h3 class="name">송민철</h3>
+        <p class="post">front end developer</p>
+    </div>
 
     <nav class="navbar">
-   <!-- ul 처리 하고 디스논하고 미디어쿼리 값 유엘 엘아이 호버처리 -->
-        <a href="index.html">ESSPRESSO BAR</a>
-        <a href="CAFFE PASCUCCI.html">CAFFE PASCUCCI</a>
-        <a href="menu.html">MENU</a>
-        <a href="News.html">NEWS</a>
-        <a href="#contact">STORE</a>
-        <a href="#blogs">CUSTOMER</a>
-        <a href="#blogs">가맹사업안내</a>
+        <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">개인</a></li>
+            <li><a href="#education">교육</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
     </nav>
-<!-- end -->
-    <div class="icons">
-        <div class="fas fa-search" id="search-btn"></div>
-        <div class="fas fa-shopping-cart" id="cart-btn"></div>
-        <div class="fas fa-bars" id="menu-btn"></div>
-    </div>
-
-    <div class="search-form">
-        <input type="search" id="search-box" placeholder="검색어를 입력하세요">
-        <label for="search-box" class="fas fa-search"></label>
-    </div>
-
-    <div class="cart-items-container">
-       
-        <div class="cart-item">
-            
-            <div class="content">
-                <h3>ESSPRESSO BAR</h3>
-                <ul class="pp">
-                    <li><a href="#">ESSPRESSO BAR</a></li>
-                </ul>>
-                <!-- <div class="search-form active">
-                    <input type="search" id="search-box" placeholder="검색어를 입력하세요">
-                    <label for="search-box" class="fas fa-search"></label>
-                </div> -->
-            </div>
-        </div>
-        <div class="cart-item">
-
-            <span class="fas fa-times"></span>
-            
-            <div class="content">
-                <h3>CAFFE PASCUCCI</h3>
-                 <!-- 자바스크립트 모달창 개념으로구현 -->
-                <ul class="pp">
-                    <li><a href="#">브랜드소개</a></li>
-                    <li><a href="#">전통과 전통의 만남</a></li>
-                    <li><a href="#">한국파스꾸찌</a></li>
-                    <li><a href="#">이탈리아파스꾸찌</a></li>
-                </ul>>
-                 <!-- 자바스크립트 모달창 개념으로구현 -->
-            </div>
-        </div>
-
-
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-            <div class="content">
-                <h3>menu</h3>
-                            <ul class=display>
-                            
-                                <li><a href="#">Italian coffee</a></li>
-                            
-                                <li><a href="#">Coffee Variation(Hot)</a></li>
-                            
-                                <li><a href="#">Coffee Variation(Iced)</a></li>
-                            
-                                <li><a href="#">Cold Brew</a></li>
-
-                            
-                        </li>
-                    </ul>
-            </div>
-            </div>
-      
-        <div class="cart-item">
-            <span class="fas fa-times"></span>
-           
-            <div class="content">
-                <h3>NEWS</h3>
-                <ul class=display>
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">이벤트/a></li>
-                    <li><a href="#">파스꾸찌 talk</a></li>
-                    <li><a href="#">홍보센터</a></li>
-            </div>
-        </div>
-      
-    </div>
 
 </header>
 
 <!-- header section ends -->
 
+<div id="menu" class="fas fa-bars"></div>
+
 <!-- home section starts  -->
 
 <section class="home" id="home">
 
-    <div class="content">
-        <h3>fresh coffee in the morning</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat labore, sint cupiditate distinctio tempora reiciendis.</p>
-        <a href="#" class="btn">get yours now</a>
-    </div>
+    <h3>안녕하세요</h3>
+    <h1>저는 <span>송민철입니다!</span></h1>
+    <p>SMA사의 면접 지원합니다!!
+    </p>
+    <a href="#about"><button class="btn">개인정보<i class="fas fa-user"></i></button></a>
 
 </section>
 
 <!-- home section ends -->
 
-<!-- abcd section starts  -->
+<!-- about section starts  -->
 
+<section class="about" id="about">
 
-<section class="abcd" id="abcc">
-    <div class="container">
-        <div class="album">
-          <div class="images">
-            <img src="http://www.caffe-pascucci.co.kr/upload/mainEvent/03_메인배너_PC_플래너세트_111746.png">
-            <img src="http://www.caffe-pascucci.co.kr/upload/mainEvent/03_메인배너_PC_픽업_155511.png">
-            <img src="http://www.caffe-pascucci.co.kr/upload/mainEvent/03_메인배너_PC_12월(수정03)_154745.png">
-            <img src="http://www.caffe-pascucci.co.kr/upload/mainEvent/03_메인배너_PC_픽업_155511.png">
-          </div>
-        </div>
-        <button class="previous">←</button> 
-        <button class="next">→</button>  
-      </div> 
-</section>
-<!-- <section class="about" id="about"> -->
+<h1 class="heading"> <span>저에대해알고싶나요?</span> 확인해보세요 </h1>
 
-    
-    <!-- <h1 class="heading"> <span>브랜드</span> 소개 </h1> -->
+<div class="row">
 
-    <!-- <div class="row">
-
-        <div class="image">
-            <img src="images/about-img.jpeg" alt="">
-        </div>
-
-        <div class="content">
-            <h3>1883년, 파스쿠찌의 이야기가 시작되었습니다.</h3>
-            <p>에스프레소의 고향, 현대 커피의 발상지인 이탈리아에는 커피에 대한 열정이 넘치는 파스쿠찌 부자가 살고 있었습니다. 이들은 대를 이은 커피 연구를 통해 드디어 새로운 맛과 향을 가진 파스쿠찌家만의 커피를 만들어 낼 수 있었습니다.</p>
-            <p>파스쿠찌 부자는 인근 몬테체리뇨네 지역을 거점으로 이들만의 커피를 전파하기 시작했습니다.
-                1946년 파스쿠찌는 장비를 이용하여 에스프레소를 추출하는 기법을 업계 최초로 도입 했고, 새로운 로스팅 기계 도입과 생산라인 구축으로 많은 양의 고품질 원두를 생산할 수 있는 환경도 갖춥니다</p> -->
-            <!-- <a href="#" class="btn">learn more</a> -->
-        <!-- </div>
-
+    <div class="info">
+        <h3> <span> name : </span> 송민철</h3>
+        <h3> <span> age : </span> 25 </h3>
+        <h3> <span> post : </span>경기도 안양거주 </h3>
+        <h3> <span> language : </span> korean </h3>
+        <a href="#"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
     </div>
 
-</section> -->
-
-<!-- abcd section ends -->
-
-
-
-
-<!-- menu section starts  -->
-
-<section class="menu" id="menu">
-
-    <h1 class="heading"> our <span>menu</span> </h1>
-
-    <div class="box-container">
+    <div class="counter">
 
         <div class="box">
-            <img src="images/menu-1.png" alt="">
-            <h3>에스프레소</h3>
-            <div class="price">ESSPRESSO</div>
-            <a href="#" class="btn">add to cart</a>
+            
+            <h3>신입 코딩 개발</h3>
         </div>
 
         <div class="box">
-            <img src="images/menu-2.png" alt="">
-            <h3>에스프레소 도피오</h3>
-            <div class="price">ESSPRESSO doppio</div>
-            <a href="#" class="btn">add to cart</a>
+            
+            <h3>기본 js 기능 2~3가지 가능</h3>
         </div>
 
         <div class="box">
-            <img src="images/menu-3.png" alt="">
-            <h3>에스프레소 마끼아또</h3>
-            <div class="price">ESSPRESSO Macchiato</div>
-            <a href="#" class="btn">add to cart</a>
+            
+            <h3>happy clients 위한 노력</h3>
         </div>
 
         <div class="box">
-            <img src="images/menu-4.png" alt="">
-            <h3>아포가또</h3>
-            <div class="price">Affogato</div>
-            <a href="#" class="btn">add to cart</a>
-        </div>
-
-        <div class="box">
-            <img src="images/menu-5.png" alt="">
-            <h3>윈터초코라떼</h3>
-            <div class="price">winter cholate latte</div>
-            <a href="#" class="btn">add to cart</a>
-        </div>
-
-        <div class="box">
-            <img src="images/menu-6.png" alt="">
-            <h3>진저쿠키라떼</h3>
-            <div class="price">ginger cooki latte</div>
-            <a href="#" class="btn">add to cart</a>
-        </div>
-
-
-        <div class="box">
-            <img src="images/menu-6.png" alt="">
-            <h3>진저쿠키라떼</h3>
-            <div class="price">ginger cooki latte</div>
-            <a href="#" class="btn">add to cart</a>
-        </div>
-
-        <div class="box">
-            <img src="images/menu-6.png" alt="">
-            <h3>진저쿠키라떼</h3>
-            <div class="price">ginger cooki latte</div>
-            <a href="#" class="btn">add to cart</a>
-        </div>
-
-        <div class="box">
-            <img src="images/menu-6.png" alt="">
-            <h3>진저쿠키라떼</h3>
-            <div class="price">ginger cooki latte</div>
-            <a href="#" class="btn">add to cart</a>
-        </div>
-
-
-
-        <div class="box">
-            <img src="images/menu-6.png" alt="">
-            <h3>진저쿠키라떼</h3>
-            <div class="price">ginger cooki latte</div>
-            <a href="#" class="btn">add to cart</a>
-        </div>
-
-
-
-        <div class="box">
-            <img src="images/menu-6.png" alt="">
-            <h3>진저쿠키라떼</h3>
-            <div class="price">ginger cooki latte</div>
-            <a href="#" class="btn">add to cart</a>
-        </div>
-
-
-
-        <div class="box">
-            <img src="images/menu-6.png" alt="">
-            <h3>진저쿠키라떼</h3>
-            <div class="price">ginger cooki latte</div>
-            <a href="#" class="btn">add to cart</a>
-        </div>
-
-
-        <div class="box">
-            <img src="images/menu-6.png" alt="">
-            <h3>진저쿠키라떼</h3>
-            <div class="price">ginger cooki latte</div>
-            <a href="#" class="btn">add to cart</a>
-        </div>
-
-        <div class="box">
-            <img src="images/menu-6.png" alt="">
-            <h3>진저쿠키라떼</h3>
-            <div class="price">ginger cooki latte</div>
-            <a href="#" class="btn">add to cart</a>
+            
+            <h3>현재 앞으로의 부족한 지식과 js를 좀더 공부하여 실력을 늘어가는데 노력을 기울이고 있습니다</h3>
         </div>
 
     </div>
 
+</div>
+
 </section>
 
-<!-- menu section ends -->
+<!-- about section ends -->
 
-<section class="products" id="products">
+<!-- education section starts  -->
 
-    <h1 class="heading">스토리를 마시는일상, <span>카페 파스꾸찌</span> </h1>
+<section class="education" id="education">
 
-    <div class="box-container">
+<h1 class="heading"> my <span>education</span> </h1>
 
-        <div class="box">
-           
-           
-            -- <div class="icons">
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-           
-            <div class="image">
-                <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/264564143_954488101837772_3720760610304653029_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=CIaMFGFZ3wIAX-YnRyr&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=2e153c2e67c7d46488ddddbdc060ab68&oe=61B48CB2" alt="">
-            </div>
-            <div class="content">
-                <h3>fresh coffee</h3>
-                <!-- <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div> -->
-                <div class="price">방문
-                    <!-- <span>$20.99</span> -->
-                </div>
-            </div>
-        </div>
+<div class="box-container">
 
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/262745675_507189174362486_7169205886011089117_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=mL9YsmJrGeoAX-Cd_Ny&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=0f71d250acf4f64bc6cd61df06e2a210&oe=61B54243" alt="">
-            </div>
-            <div class="content">
-                <h3>fresh coffee</h3>
-                <!-- <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div> -->
-        <div class="price">방문 <!-- <span>$20.99</span>--> 
-                </div> 
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="icons">
-                <a href="#" class="fab fa-instagram"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-            <div class="image">
-                <img src="https://scontent-ssn1-1.cdninstagram.com/v/t51.29350-15/264188200_724767945151184_8880183312911417821_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=QQd0q2p7srAAX-gaFwd&_nc_ht=scontent-ssn1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=156273a09568d459c62197246d099176&oe=61B4FBEB" alt="">
-            </div>
-            <div class="content">
-                <h3>fresh coffee</h3>
-                <!-- <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div> -->
-                <div class="price">방문
-                     <!-- <span>$20.99</span> -->
-                </div>
-            </div>
-        </div>
-
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2021</span>
+        <h3>front end development</h3>
+        <p>9월부터 html 코딩 및 웹디자인 기본공부시작</p>
     </div>
 
-</section>
-
-<!-- review section starts  -->
-
-<section class="review" id="review">
-
-    <h1 class="heading"> 매장안내<span>review</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-
-            <img  src="https://www.caffe-pascucci.co.kr/upload/store/1_95559.jfif" class="user" alt="">
-            <!-- <img src="images/quote-img.png" alt="" class="quote"> -->
-            <h3>소노벨변산</h3>
-            <p>전라북도 부안군 변사면 변산해변로51</p>
-            <!-- <img src="images/pic-1.png" class="user" alt=""> -->
-            
-            <!-- <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div> -->
-        </div>
-
-        <div class="box">
-            <img src="https://www.caffe-pascucci.co.kr/upload/store/1_85844.jpg" class="user" alt="">
-            <!-- <img src="images/quote-img.png" alt="" class="quote"> -->
-           
-            <h3>인천공항 LS 2호점/h3>
-            <p>인천시 중구 공항로 271 인천국제 공항 제1여객터미널 3층 H구역</p>
-
-            <!-- <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div> -->
-        </div>
-        
-        <div class="box">
-            <img src="https://www.caffe-pascucci.co.kr/upload/store/%EC%A0%90%ED%8F%AC%EC%99%B8%EB%B6%80_16012.jpeg" class="user" alt="">
-            <!-- <img src="images/quote-img.png" alt="" class="quote"> -->
-            
-            <h3>양평휴게소 서울방향</h3>
-            <p>경기 양평균 양동면 여양3로 384-27</p>
-            
-            
-            <!-- <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-            </div> -->
-        </div>
-
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2021</span>
+        <h3>front end development</h3>
+        <p>10월 html css 프로젝트 디자인 코딩및 구현연습  </p>
     </div>
 
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2021</span>
+        <h3>front end development</h3>
+        <p>11월 12월 js 공부 및 프로젝트 개발 연습에 노결하고있습니다</p>
+    </div>
+
+   
+
+</div>
+
 </section>
 
-<!-- review section ends -->
+<!-- education section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+<h1 class="heading"> my <span>portfolio</span> </h1>
+
+<div class="box-container">
+
+   
+</div>
+
+
+<nav class="naclass">
+    <h1>
+        js구현기능 모음
+    </h1>
+    <ul>
+        <li><a href="../js/clock.html">시계</a></li>
+        <li><a href="../js/img slide.html">이미지</a></li>
+        <li><a href="../js/kakaotalk.html">숫자게임</a></li>
+        <li><a href="../js/Zoom-Clone-With-WebRTC-master/zoom-clone.html">줌클론</a></li>
+       
+    </ul>
+</nav>
+</section>
+
+
+
+<!-- .footer{
+    background:var(--black);
+    text-align: center;
+}
+
+.footer .share{
+    padding:1rem 0;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color:#fff;
+    border:var(--border);
+    margin:.3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    gap:1rem;
+}
+
+.footer .links a{
+    padding:.7rem 2rem;
+    color:#fff;
+    border:var(--border);
+    font-size: 2rem;
+}
+
+.footer .links a:hover{
+    background:var(--main-color);
+} -->
+
+
+
+
+
+<!-- portfolio section ends -->
 
 <!-- contact section starts  -->
 
 <section class="contact" id="contact">
 
-    <h1 class="heading"> <span>contact</span> us </h1>
+<h1 class="heading"> <span>contact</span> me </h1>
 
-    <div class="row">
+<div class="row">
 
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30153.788252261566!2d72.82321484621745!3d19.141690214227783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b63aceef0c69%3A0x2aa80cf2287dfa3b!2sJogeshwari%20West%2C%20Mumbai%2C%20Maharashtra%20400047!5e0!3m2!1sen!2sin!4v1629452077891!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+    <div class="content">
 
-        <form action="">
-            <h3>매장찾기</h3>
-            <!-- <div class="inputBox">
-                <div class="fas fa-search" id="search-btn"></div>
-                 <span class="fas fa-user"></span> 
-                <input type="text" placeholder="name">
-            </div> -->
-            <div class="inputBox">
-                <span class="fas fa-search"></span>
-                <!-- <span class="fas fa-envelope"></span> -->
-                <!-- <input type="email" placeholder="email"> -->
-                <input type="search" placeholder="검색어를 입력하세요">
-            </div>
-            <!-- <div class="inputBox">
-                <span class="fas fa-phone"></span>
-                <input type="number" placeholder="number">
-            </div> -->
-            <!-- <input type="submit" value="contact now" class="btn"> -->
-            <a href="#" class="btn">자세히 보기</a>
-        </form>
+        <h3 class="title">contact info</h3>
+
+        <div class="info">
+            <h3> <i class="fas fa-envelope"></i> alscjf9639@naver.com (소문자 표기)</h3>
+            <h3> <i class="fas fa-phone"></i> 010-2681-9639</h3>
+            <h3> <i class="fas fa-map-marker-alt"></i> 경기도 안양거주 </h3>
+        </div>
 
     </div>
+
+    <form action="">
+
+        <input type="text" placeholder="name" class="box">
+        <input type="email" placeholder="email" class="box">
+        <input type="text" placeholder="project" class="box">
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+
+    </form>
+
+</div>
 
 </section>
 
 <!-- contact section ends -->
 
-<!-- blogs section starts  -->
 
- <!-- <section class="blogs" id="blogs">
+<!-- scroll top button  -->
 
-    <h1 class="heading"> our <span>blogs</span> </h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <div class="image">
-                <img src="images/blog-1.jpeg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">tasty and refreshing coffee</a>
-                <span>by admin / 21st may, 2021</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/blog-2.jpeg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">tasty and refreshing coffee</a>
-                <span>by admin / 21st may, 2021</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/blog-3.jpeg" alt="">
-            </div>
-            <div class="content">
-                <a href="#" class="title">tasty and refreshing coffee</a>
-                <span>by admin / 21st may, 2021</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-        </div>
-
-    </div>
-
-</section> -->
-
-<!-- blogs section ends -->
-
-<!-- footer section starts  -->
-
-<section class="footer">
-
-    <div class="share">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-        <a href="#" class="fab fa-pinterest"></a>
-    </div>
-
-    <div class="links">
-        <a href="#">해피포인트</a>
-        <a href="#">개인정보처리방침</a>
-        <a href="#">영상정보처리기기운영관리방침</a>
-        <a href="#">이용약관</a>
-        <a href="#">윤리센고센터</a>
-        <a href="#">거래희망사전등록</a>
-        <!-- <a href="#">blogs</a> -->
-    </div>
-
-    <div class="credit">(주)파리그라상 사업자 등록번호:129-81-07244
-        경기도 성남시 중원구 사기막골로 31번길 18 FAX, 0505-073-0210 고객상담센터 080-731-2027
-        ALL RIGHTS RESERVED 2016 THE PASCUCCI,PARIS CROISSANT CO , LTD
-        <!-- <span>mr. web designer</span> | all rights reserved -->
-    </div>
-<p>(주)파리그라상 사업자 등록번호:129-81-07244
-    경기도 성남시 중원구 사기막골로 31번길 18 FAX, 0505-073-0210 고객상담센터 080-731-2027
-    ALL RIGHTS RESERVED 2016 THE PASCUCCI,PARIS CROISSANT CO , LTD
-</p>
-</section> 
-
-<!-- footer section ends -->
+<a href="#home" class="top">
+    <img src="images/scroll-top-img.png" alt="">
+</a>
 
 
 
@@ -579,10 +271,12 @@
 
 
 
-
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script src="./script.js"></script>
+
 
 </body>
 </html>
